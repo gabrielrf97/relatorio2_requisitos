@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Linux
 
 ## Compilando
