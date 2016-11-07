@@ -1,0 +1,411 @@
+\chapter{Processo de engenharia de requisitos}
+
+\section{SAFe 4.0}
+
+O processo que o grupo irá utilizar foi baseado no Scaled Agile Framework (SAFe) em sua versão 4.0, o SAFe é um framework que fornece padrões para implementar a metodologia Ágil em nível de empresas, provendo uma visão que guia em seus três níveis: Portfólio, Programa e Time.
+
+\begin{figure}[!htpb]
+\centering
+\includegraphics[scale=0.6]{figuras/processo/SAFe_Big_Picture_4}
+\caption{Big Picture que representa a atual versão do SAFe}
+\end{figure}
+
+\subsection{Nível de Portfólio}
+O nível de portfólio consiste no nível mais alto de abstração do SAFe, esse nível fornece construções básicas em torno do fluxo de valor do negócio para guiar empresas que adotam a metodologia ágil.
+
+\subsection{Nível de Programa}
+O SAFe detalha o nível de programa como o nível onde são detalhadas as Features e os incrementos de programas (PI), contendo uma das atividades primordiais do framework, o PI Planning.
+
+\subsection{Nível de Time}
+
+O nível de time é o nível mais baixo no framework, nele são aplicados os rituais do Scrum, onde as histórias de usuário são criadas a partir das features para serem desenvolvidas em Sprints.
+
+\section{Papéis utilizados}
+
+\subsection{Nível de Portfólio}
+Os papéis que vão ser utilizados no nível de portfólio são os Epic Owners e o Gerente de Programa de Portfólio. No SAFe 4.0 há mais um papel nesse nível que é o de Arquiteto Empresarial, que serve para dar uma visão de um nível mais alto em relação a aspectos arquiteturais, além de guiar os times em torno de uma visão comum,  como o projeto vai trabalhar com apenas uma equipe, e não é algo muito complexo, esse papel não será utilizado no processo.
+
+\begin{itemize}
+\item Epic Owners: O Epic Owner tem a responsabilidade de guiar os Épicos individualmente pelo Processo do Kanban de Portfólio e influeniar na decisão do Gerente de Programa de Portfólio, quando o épico é aceito, ele trabalha com os times de desenvolvimento e o gerente de produto para iniciar as atividades necessárias para atender o épico.
+\item Gerente de Programa de Portfólio: Segundo o SAFe, esse papel representa as pessoas que tem o nível mais alto de estratégia para realizar a tomada de decisões no framework SAFe. Tem o papel de participar da definição  e comunicação dos Temas Estratégicos, além de definir e priorizar o Backlog de Épicos.
+\end{itemize}
+
+\subsection{Nível de Programa}
+Os papéis a serem utilizados no nível de programa são o de gerente de produto, e arquiteto de sistema, os outros papéis nesse nível não serão utilizados por se tratar de um projeto pequeno que envolve apenas uma equipe de quatro pessoas.
+
+\begin{itemize}
+\item Gerente de produto: É uma das autoridades principais contidas no SAFe, guia o nível de Programa, cria o Visão, e trabalha com o cliente para entender o que ele precisa, além de definir, priorizar e validar requisitos. 
+\item Arquiteto do sistema: Serve para gerar uma visão comum entre os times de desenvolvimento e a solução a ser desenvolvida. Ele também participa da definição de sistemas e subsistemas, validam questões envolvendo tecnologia e avaliam alternativas. Participam das definições de nível mais alto na definição dos requisitos não-funcionais.
+\end{itemize}
+
+\subsection{Nível de Time}
+Os papéis a serem utilizados no nível de time são os mesmos utilizados no SCRUM, sendo eles o Scrum Master, o Product Owner e o time de desenvolvimento.
+
+\begin{itemize}
+\item Scrum Master: O papel de Scrum Master é assumido por um membro do time, que vai ter a responsibilidade de ajudar o time a ser organizar e atingir seus objetivos, implementando e dando suporte aos princípios e práticas do SCRUM e do SAFe, isso tudo para manter um fluxo correto na realização das atividades.
+\item Product Owner: É o membro do time que tem o papel de definir as histórias de usuários e seus critérios de aceitação, além de priorizar o Backlog das mesmas, enquanto mantém a integridade conceitual e técnica das features e componentes de responsabilidade do time.
+\item Time de Desenvolvimento: Consiste em uma equipe pequena onde essas pessoas são as responsáveis pelo desenvolvimento de código e testes para a aplicação, além disso participam de todas as atividades no nível de time.
+\end{itemize}
+
+\newpage
+\section{Processo elaborado pela equipe}
+\begin{figure}[!htpb]
+\centering	
+\includegraphics[scale=0.45]{figuras/processo/modelo}
+\caption{Modelo do processo a ser utilizado}
+\end{figure}
+
+\newpage
+
+\section{Atividades}
+
+% NÍVEL DE PORTFÓLIO
+
+\subsection{Atividade: Definir Temas Estratégicos}
+\begin{itemize}
+\item Participantes: Gerente de Programa de Portfólio, Product Owner
+Descrição: De acordo com o SAFe, os temas estratégicos são objetivos de negócio específicos que servem para conectar o Portfólio à estratégia de negócio da empresa. No contexto desse trabalho, essa atividade vai praticamente seguir a definição fornecida pelo SAFe, para alinhar o trabalho proposto com a estratégia de negócio que o grupo vai adotar. 
+
+\item Subatividades(s): 
+    \begin{itemize}
+    \item Levantar Temas Estratégicos: Consiste em reuniões com o cliente que estará assumindo o papel de Product Owner, para estabelecer quais objetivos terão de ser alcançados.
+    \item Analisar Temas Estratégicos: Fazer uma análise dos temas estratégicos levantados para garantir que os stakeholders compreenderam os mesmos.
+    \item Documentar Temas Estratégicos:  Gerar um documento contendo os Temas Estratégicos coletados, essa subatividade contará com o auxílio da Ferramenta de Gerenciamento de Requisitos.
+    \item Validar Temas Estratégicos: Tem o intuito de garantir que os temas estratégicos documentados realmente atendem ao problema especificado pelo cliente, para então prosseguir para a próxima atividade.
+    \end{itemize}
+	Artefatos de entrada:
+    Não são utilizados artefatos de entrada nesta atividade.
+ 
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Temas Estratégicos documentados na Ferramenta de Gerenciamento de Requisitos.
+\item Atividade(s) Predecessora(s): Como essa atividade é a primeira do processo, não há atividades que a precedem.
+\item Atividade(s) Sucessora(s): Definir épicos e Gerenciar mudança de requisitos.
+
+\end{itemize}
+
+\subsection{Atividade: Gerenciar mudança de requisitos}
+\begin{itemize}
+\item Participantes: Gerente de Programa de Portfólio, Epic Ownerm, Product Owner
+Descrição: Mudança na abordagem ágil sempre está disposta a ocorrer, essa tarefa consiste em uma avaliação contínua de possíveis falhas elaborados nos épicos, para que sejam efetuadas alterações de modo a corrigir tais erros e seguir com um bom andamento do projeto.
+
+Artefatos de entrada:
+    Backlog de épicos.
+ 
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog de épicos atualizado se necessário.
+\item Atividade(s) Predecessora(s): Definir Temas estratégicos.
+\item Atividade(s) Sucessora(s): Sem atividades sucessoras, essa é uma atividade que ocorre durante todo o processo.
+
+\end{itemize}
+
+
+
+\subsection{Atividade: Definir épicos}
+\begin{itemize}
+\item Participantes: Epic owners, Product Owner
+
+\item Descrição: De acordo com o SAFe, os épicos conseguem transmitir as maiores iniciativas de projeto localizadas no nível Portfólio, os épicos de negócio agregam valor de uma forma direta no projeto, sendo compreendidos de investimento intenso e tem um impacto significativo no projeto. 
+
+\item Subatividades(s): 
+	\begin{itemize}
+  	\item Levantar Épicos: esse levantamento também será executado em conjunto do Product Owner, para definir quais problemas devem ser resolvidos e elaborar uma visão mais completa das necessidades do cliente, além de elaborar os critérios de aceitação para esses épicos.
+    \item Analisar Épicos: Fazer uma análise dos épicos levantados para garantir que os stakeholders envolvidos compreenderam os épicos levantados e suas necessidades, além de alertar possíveis problemas.
+    \item Documentar Épicos:  Documentar os épicos levantados na ferramenta de Gerenciamento de Requisitos.
+    \item Validar Épicos: Garantir que os épicos levantados são diretamente voltados a resolução do problema apontado pelo cliente.
+    \end{itemize}
+    
+\item Artefatos de entrada: Temas estratégicos
+ 
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog de épicos
+\item Atividade(s) Predecessora(s): Definir temas estratégicos
+\item Atividade(s) Sucessora(s): Definir enablers de épicos
+
+\end{itemize}
+
+\subsection{Atividade: Definir enablers dos épicos}
+\begin{itemize}
+\item Participantes: Epic owners, Gerente de Programa de Portfólio,Product Owner, Arquiteto do sistema
+
+\item Descrição: De acordo com o SAFe, os épicos facilitadores(Enabler epics) são utilizados para dar suporte aos próximos épicos de negócio e evoluir a visão arquitetural do projeto. Com isso surgem boa parte dos requisitos não-funcionais que vão estar detalhados como enablers.
+
+\item Subatividades(s):
+	\begin{itemize} 
+    \item Levantar Enablers: definir os enablers que agregarão valor significativo aos épicos já coletados.
+    \item Analisar Enablers: Verificar se o time está a par desses enablers.
+    \item Documentar Enablers:  Registrar esses enablers no Backlog de épicos.
+    \end{itemize}
+\item Artefatos de entrada: Backlog de épicos
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog de épicos atualizado
+
+\item Atividade(s) Predecessora(s): Definir épicos de negócio
+  
+\item Atividade(s) Sucessora(s): Priorizar épicos
+\end{itemize}
+
+\subsection{Atividade: Priorizar Épicos}
+\begin{itemize}
+\item Participantes: Epic owners, Gerente de Programa de Portfólio
+
+\item Descrição: Essa atividade consiste em priorizar os épicos essenciais para a solução do problema, para que os mesmos seja resolvidos o quanto antes no projeto, consiste em uma avaliação de Complexidade X Agregação de valor ao projeto.
+
+\item Artefatos de entrada: Backlog de épicos atualizado
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog de épicos priorizados
+
+\item Atividade(s) Predecessora(s): Definir enablers dos épicos
+  
+\item Atividade(s) Sucessora(s): Definir features
+\end{itemize}
+
+% NÍVEL DE PROGRAMA
+
+\subsection{Atividade: Definir Features}
+\begin{itemize}
+\item Participantes: Epic owners, Gerente de Produto, Arquiteto do sistema
+
+\item Descrição: Nesta atividade, baseado no backlog dos épicos, utilizando ferramentas de elicitação de requisitos, deve-se levantar as features do programa, documentando-as no backlog das features.
+
+\item Artefatos de entrada: Backlog dos épicos
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog das features
+
+\item Atividade(s) Predecessora(s): priorizar épicos.
+  
+\item Atividade(s) Sucessora(s): Definir enablers das features
+\end{itemize}
+
+\subsection{Atividade: Gerenciar mudança de requisitos}
+\begin{itemize}
+\item Participantes: Gerente de Produto, Arquiteto do sistema
+
+\item Descrição: Esta atividade consiste em, durante grande parte do processo de elicitação e desenvolvimento, analisar e gerenciar possíveis mudanças de features solicitadas, suas alterações e impacto geral no projeto, além de validar estas possíveis mudança com os stakeholders afetados.
+\item Artefatos de entrada: Solicitação de mudança de requisitos
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog das features(atualizado) 
+
+\item Atividade(s) Predecessora(s): Definir features
+  
+\item Atividade(s) Sucessora(s): esta atividade não possui atividade sucessora
+\end{itemize}
+
+\subsection{Atividade: Definir Enablers das features}
+\begin{itemize}
+\item Participantes: Epic owners, Gerente de Produto, Arquiteto do sistema
+
+\item Descrição: Nesta atividade, baseado no backlog das features, são levantados os requisitos não funcionais de cada feature do sistema, documentando-as no backlog das features.
+
+\item Artefatos de entrada: backlog de features
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): backlog de features
+
+\item Atividade(s) Predecessora(s): Definir features
+  
+\item Atividade(s) Sucessora(s): Priorizar features
+\end{itemize}
+
+
+\subsection{Atividade: Priorizar Features}
+\begin{itemize}
+\item Participantes: Epic owners, Gerente de Produto, Arquiteto do sistema
+
+\item Descrição: Nesta atividade, baseado no backlog das features atualizado, são priorizadas, fazendo uma relação de valor agregado x dificuldade de implementação, as features previamente definidas.
+
+\item Artefatos de entrada: Backlog de features
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog de features (priorizado)
+
+\item Atividade(s) Predecessora(s): Definir Enablers das features
+  
+\item Atividade(s) Sucessora(s): Definir Visão
+\end{itemize}
+
+
+\subsection{Atividade: Definir Visão}
+\begin{itemize}
+\item Participantes: Gerente do produto e arquiteto do sistema. 
+
+\item Descrição: Esta atividade consiste em definir uma visão futura da solução a ser desenvolvida, refletindo a necessidade do consumidor e dos stakeholders, bem como as features e capacidades destinadas para estas necessidades.\cite{SAFe} Este artefato permite a(s) equipe(s) de desenvolvimento uma visão contextual e o objetivo da solução a ser desenvolvida, adicionando contexto a cada feature. 
+
+\item Artefatos de entrada: Features backlog
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Documento de Visão
+
+\item Atividade(s) Predecessora(s): Priorizar features
+  
+\item Atividade(s) Sucessora(s): Construir Roadmap
+\end{itemize}
+
+
+\subsection{Atividade: Construir RoadMap}
+\begin{itemize}
+\item Participantes: Gerente de Produto e Arquiteto do Sistema
+
+\item Descrição: Nesta atividade será realizado, através de uma reunião, a construção do roadmap, no qual serão definidos os PI (Program Increments), datas de entrega, quais features serão implementadas em cada PI e os milestones do projeto.
+
+\item Artefatos de entrada: Visão
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): RoadMap
+
+\item Atividade(s) Predecessora(s): Definir visão
+  
+\item Atividade(s) Sucessora(s): Planejar PI
+\end{itemize}
+
+\subsection{Atividade: Planejar PI (Product Increment)}
+\begin{itemize}
+\item Participantes: Gerente de Produto, Arquiteto do Sistema, Scrum Master e desenvolvedores.
+
+\item Descrição: Esta atividade consiste em escolher um PI previamente definido, desmembrar suas features em histórias de usuários e definir quantas iterações serão necessárias para implementar as features desm
+
+\item Artefatos de entrada: RoadMap e Documento de visão
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): PI backlog
+
+\item Atividade(s) Predecessora(s): Construir RoadMap
+  
+\item Atividade(s) Sucessora(s): Definir papéis
+\end{itemize}
+
+
+% NÍVEL DE TIME
+
+\subsection{Atividade: Desmembrar features em Histórias de Usuário}
+\begin{itemize}
+\item Participantes: Scrum Master, Product Owner e time de desenvolvimento
+
+\item Descrição: As histórias de usuário são descrições curtas e simples de uma funcionalidade contadas de um perspectiva do usuário. Cada feature será dividida em histórias de usuário que agreguem valor quando forem desenvolvidas.
+
+\item Subatividades(s):
+\begin{itemize} 
+\item Levantar User Stories: definir as User Stories que contemplarão a feature a ser implementada.
+\item Analisar User Stories: Verificar se o time está a par dessas User Stories.
+\item Documentar User Stories:  Registrar essas User Stories no Backlog de User Stories.
+\item Validar User Storeis: Verificar se as User stories estão atendendo corretamente a feature.
+\end{itemize}
+
+\item Artefatos de entrada: PI Backlog
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Feature Backlog
+
+\item Atividade(s) Predecessora(s): Planejar PI
+  
+\item Atividade(s) Sucessora(s): Priorizar Histórias de Usuário.
+\end{itemize}
+
+\subsection{Atividade: Priorizar Histórias de Usuário}
+\begin{itemize}
+\item Participantes: Scrum Master, Product Owner e time de desenvolvimento
+
+\item Descrição: O time irá dividir as histórias de usuário de forma com que a cada iteração sejam desenvolvidas histórias que agreguem valor junto ao usuário. 
+
+\item Artefatos de entrada: Feature Backlog
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Feature Backlog (priorizado)
+
+\item Atividade(s) Predecessora(s): Definição das Histórias de Usuário
+  
+\item Atividade(s) Sucessora(s): Planejar iteração
+\end{itemize}
+
+\subsection{Atividade: Planejar Iteração}
+\begin{itemize}
+\item Participantes: Scrum Master, Product Owner e time de desenvolvimento
+
+\item Descrição: Iterações são blocos de trabalho incremental com tempo fixo onde se desenvolveram histórias de usuário a fim entregar funcionalidades ao fim de cada iteração. Dessa forma o time planejará como cada iteração deverar ocorrer e quais histórias de usuário devem ser implementadas.
+
+\item Artefatos de entrada: Feature Backlog
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog da iteração
+
+\item Atividade(s) Predecessora(s): Priorizar Histórias de Usuário
+  
+\item Atividade(s) Sucessora(s): Gerenciar mudança de requisitos na iteração e Desenvolver histórias de usuário
+\end{itemize}
+
+\subsection{Atividade: Gerenciar mudança de requisitos na iteração}
+\begin{itemize}
+\item Participantes: Scrum Master, Product Owner e time de desenvolvimento
+
+\item Descrição: A gerência de mudanças de requisitos ocorrerá paralelamente ao Desenvolvimento de User Stories, Revisão de Iterações e Retrospectiva de Iterações. As mudanças nas User Stories serão acompanhadas e documentadas nesta fase.
+
+\item Artefatos de entrada: Backlog da iteração
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Backlog da iteração (atualizado)
+
+\item Atividade(s) Predecessora(s): Planejar Iteração
+  
+\item Atividade(s) Sucessora(s): Realizar revisão da iteração
+\end{itemize}
+
+\subsection{Atividade: Desenvolver histórias de usuário}
+\begin{itemize}
+\item Participantes: Scrum Master e time de desenvolvimento
+
+\item Descrição: As histórias de usuário estarão devidamente divididas em tarefas, assim as histórias de usuário serão implementadas pelo time de acordo com os critérios definidos.
+
+\item Artefatos de entrada: Backlog da iteração
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Não serão gerados artefatos
+
+\item Atividade(s) Predecessora(s): Planejar Iteração
+  
+\item Atividade(s) Sucessora(s): Realizar revisão da iteração
+\end{itemize}
+
+\subsection{Atividade: Realizar revisão da iteração}
+\begin{itemize}
+\item Participantes: Scrum Master e time de desenvolvimento
+
+\item Descrição: Nessa atividade o time se reunirá a fim de analisar o status da iteração, os pontos positivos e negativos serão levantados. Deve ser avaliado também o que está sendo feito na iteração, para o time saber o que está dando certo ou não.
+
+\item Artefatos de entrada: Backlog da iteração
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Realizar revisão da iteração (atualizado)
+
+\item Atividade(s) Predecessora(s): Desenvolver histórias de usuário
+  
+\item Atividade(s) Sucessora(s): Realizar retrospectiva da iteraçã
+\end{itemize}
+
+\subsection{Atividade: Realizar retrospectiva da iteração}
+\begin{itemize}
+\item Participantes: Scrum Master, Product Owner e time de desenvolvimento
+
+\item Descrição: Na retrospectiva da iteração será analisado como decorreu a iteração com o objetivo de identificar os pontos a serem melhorados para o prosseguir do projeto. Ao fim dessa etapa o Feature Backlog atualizado será gerado apoiado nas mudanças acordadas.
+
+\item Artefatos de entrada: Realizar revisão da iteração
+
+\item Artefato(s) Gerado(s) e/ou Alterado(s): Realizar revisão da iteração (atualizado)
+
+\item Atividade(s) Predecessora(s): Realizar revisão da iteração
+  
+\item Atividade(s) Sucessora(s): Fim do processo, caso não hajam mais iterações, se não, próxima iteração.
+\end{itemize}
+
+\section{Artefatos produzidos pelo processo}
+
+Nesta seção, serão detalhados os artefatos a serem gerados pelas atividades realizadas durante 
+a execução do processo modelado.
+\subsection{Artefatos produzidos em nível de Portfólio}
+\begin{itemize}
+\item Backlog de épicos: Atua fortemente como uma fonte de gerenciamento dos épicos levantados no projeto, é gerado na atividade de Levantar Épicos e atualizado nas atividades de Levantar enablers de épicos e Priorizar épicos. Também é utilizado constantemente para a atividade Gerenciamento de requisitos no nível de porftólio, para que quando seja necessário efetuar alguma mudança, o mesmo se torna a entrada da atividade, e sai atualizado.
+\end{itemize}
+
+
+\subsection{Artefatos produzidos em nível de Programa}
+\begin{itemize}
+\item Backlog de features: Atua fortemente como uma fonte de gerenciamento das features levantadas para solucionar os épicos propostos, é criado na atividade de Definir Features,
+atualizado nas atividades Definir Enablers de Features e Priorizar Features. Assim como o backlog de épicos é utilizado na atividade de Gerenciamento de Requisitos no nível de portfólio, esse artefato é utilizado no nível de programa para acompanhamento constante e alteração das features caso necessário.
+
+\item Documento de Visão: O documento de visão serve para estabelecer uma visualização futura das soluções a serem implementadas para resolução do problema proposto, ele é construído na atividade de Definir Visão e utilizado para construção do Roadmap, além de ser um instrumento de suporte no planejamento do Program Increment.
+
+\item Roadmap: O roadmap serve para planejar e comunicar uma visão futura da solução, é uma ferramenta que serve para alinhar todos os stakeholders envolvidos, deixando ciente quais passos serão executados e quais variáveis estarão envolvidas no caminho até o fim da solução, como estabelecimento de objetivos e prazos. Construído na atividade de Construir o Roadmap.
+
+\item Backlog do Program Increment: Esse artefato consiste de todas as features a serem aplicadas no Program Increment planejado que é consistido de várias iterações, é construído na atividade de Planejar o Product Increment.
+
+\end{itemize}
+
+\subsection{Artefatos produzidos em nível de Time}
+\begin{itemize}
+\item Backlog da feature: Esse artefato consiste nas histórias de usuárias criadas para corresponder o desenvolvimento de feature que está sendo construída na iteração atual. É construído na atividade de Desmembrar Features em Histórias de Usuário e é atualizado a cada reinício do ciclo de iterações do Product Increment atual.
+\item Backlog da iteração: Artefato que define quais histórias de usuários serão implementadas naquela iteração, é construído na atividade de Planejar iteração e sempre que uma nova iteção vai iniciar ele é reconstruído.
+\end{itemize}
