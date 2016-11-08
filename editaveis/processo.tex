@@ -4,7 +4,7 @@ Na elaboração da primeira etapa do trabalho, o grupo construiu um processo com
 
 \begin{figure}[!htpb]
 \centering	
-\includegraphics[scale=0.45]{figuras/processo/modelo}
+\includegraphics[scale=0.35]{figuras/processo/modelo}
 \caption{Modelo do processo a ser utilizado}
 \end{figure}
 
@@ -21,8 +21,9 @@ Segundo o SAFe, temas estratégicos são especicamente objetivos de negócio que
 \section{Definir épicos}
 Segundo o SAFe, épicos de negócio agregam valor de forma direta no projeto. Foram coletados dois épicos de negócio junto ao cliente, que são listados abaixo:
 
-\begin{enumerate}
-\item Informatizar Sistema de Controle de Estoque
+
+\subsection{Informatizar Sistema de Controle de Estoque}
+	
 	\begin{table}[htb]
     \begin{tabular}{|l|l|}
         \hline
@@ -30,9 +31,9 @@ Segundo o SAFe, épicos de negócio agregam valor de forma direta no projeto. Fo
         Quem          & {\parbox{12cm}{controlam estoque      }}                                                \\ \hline
         O             & {\parbox{12cm}{Pydaria}}                                                                \\ 
         É             & {\parbox{12cm}{uma ferramenta para controlar estoque         }}                         \\ \hline
-        Que           & {\parbox{12cm}{ajuda a controlar o estoque de uma maneira mais organizada e eficiente}} \\ \hline
-        Diferente de  & {\parbox{12cm}{ Microsoft Excel       }}                                                 \\ 
-        Nossa Solução & {\parbox{12cm}{faz esse controle de uma forma mais dinâmica.     }}                     \\ \hline
+        Que           & {\parbox{12cm}{ajuda a controlar o estoque de uma maneira mais organizada e eficiente.  }} \\ \hline
+        Diferente de  & {\parbox{12cm}{ Microsoft Excel       }}                                                 \\ \hline
+        Nossa Solução & {\parbox{12cm}{faz esse controle de uma forma mais dinâmica.     }}                     \\
         \hline
     \end{tabular}
     \caption{Posicionamento do épico 2.}
@@ -51,7 +52,7 @@ Segundo o SAFe, épicos de negócio agregam valor de forma direta no projeto. Fo
 
 \newpage
 
-\item Informatizar sistema para controle de desperdício
+\subsection{Informatizar sistema para controle de desperdício}
 	\begin{table}[htb]
     \begin{tabular}{|l|l|}
         \hline
@@ -71,7 +72,7 @@ Segundo o SAFe, épicos de negócio agregam valor de forma direta no projeto. Fo
      \begin{table}[htb]
     \begin{tabular}{|l|l|}
         \hline
-        Critério de Aceitação & {\parbox{12cm}{O software deve sugerir baseado em dados anteriores registrados pelos envolvidos no controle de estoque e na produção a quantidade de produtos na reposição de estoque e a quantidade de matéria prima envolvida na produção.}} \\ \hline
+        Critério de Aceitação & {\parbox{12cm}{O software deve sugerir, baseado em dados anteriores registrados pelos envolvidos no controle de estoque e na produção, a quantidade de produtos na reposição de estoque e a quantidade de matéria prima envolvida na produção.}} \\ \hline
         No Escopo             & {\parbox{12cm}{Sugestão de quantidade de produtos para a reposição e matéria prima para produção}}                                                \\ 
         Fora do escopo        & {\parbox{12cm}{Sugestões baseadas em outros dados que não seja tempo.}}                             \\
         \hline
@@ -79,13 +80,49 @@ Segundo o SAFe, épicos de negócio agregam valor de forma direta no projeto. Fo
     \caption{Escopo do épico 2.}
 	\end{table}
 
-\end{enumerate}
 
 \section{Definir enablers dos épicos}
 
 \section{Priorizar Épicos}
+Foram levantados apenas dois épicos de negócio, e ambos foram priorizados para serem trabalhados.
 
 \section{Definir Features}
+Features é um serviço fornecido pelo sistema, de acordo com o SAFe. Seguindo o modelo de rastreabilidade as features precisam ter seus épicos, logo serão detalhadas as features de cada épico separadamente.
+
+\subsection{Features do Épico: Informatizar Sistema de Controle de Estoque}
+
+\begin{itemize}
+\item Manter produtos
+\begin{itemize}
+\item Descrição: Essa feature envolve as operações de CRUD(Create, Read, Update, Delete) básicas da maioria dos softwares, aplicadas aos recursos gerenciados na empresa.
+\item Benefícios: Fornecer melhor catalogação dos produtos, substituindo a forma empírica.
+\end{itemize}
+
+\item Analisar taxa de entrada/saída de produtos específicos:
+\begin{itemize}
+	\item Descrição: Verificar se a taxa de saída corresponde a taxa de entrada.
+	\item Benefícios: Permite controle do estoque desses produtos contra atos de furto.
+\end{itemize}
+
+\end{itemize}	
+
+\subsection{Features do Épico: Informatizar sistema para controle de desperdício}
+
+\begin{itemize}
+
+\item Analisar o uso de matéria-prima
+\begin{itemize}
+	\item Descrição:
+	\item Benefícios:
+\end{itemize}
+
+\item Informar sobre os resultados mensais
+\begin{itemize}
+	\item Descrição:
+	\item Benefícios:
+\end{itemize}
+
+\end{itemize}
 
 \section{Definir Enablers das Features}
 
