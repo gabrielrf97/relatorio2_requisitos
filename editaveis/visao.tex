@@ -13,6 +13,7 @@
 	Também está fora do escopo a questão de controle de estoque de produtos terceirizados já que os mesmos quando vencidos são trocados pela empresa fornecedora.
 
 \section{Definições, Acrônimos e Abreviações}
+	CRUD - Create, Read, Update, Delete
 
 \section{Posicionamento}
 
@@ -51,19 +52,98 @@
 
 \subsection{Resumo dos Envolvidos}
 
-\subsection{Resumo dos Usuários}
+\begin{itemize}
+
+\item Cliente: A representação do papel de cliente se dá pela empresa Padaria da Vila, que é um comércio voltado para atividades de panificação, confeitaria e mercearia, tendo como seu representante nas reuniões a Srta. Thaynara Espindola, para ajudar no planejamento do sistema para solucinar o problema de controle de estoque.
+
+\item Usuários: Os usuários dos sistemas serão aqueles que controlam o estoque, os mesmos terão o papel de fornecer a demanda de produtos para registrar na aplicação e poderão solicitar relatórios da mesma.
+
+\item Equipe: A equipe de desenvolvimento terá participação no projeto, desde o entendimento do problema, levantamento de requisitos à construção do software. A mesma trabalhará com o processo apresentado na primeira etapa do trabalho, utilizando de uma metodologia ágil.
+
+\end{itemize}
 
 \subsection{Principais necessidades dos Usuários ou Envolvidos}
 
+\begin{itemize}
+
+\item Controle efetivo e confiável de estoque
+	
+	\begin{itemize}
+		\item Prioridade: Alta
+		\item Problemas:
+			\begin{itemize}
+				\item O método atual não é tão confiável, podendo haver perda do conhecimento sobre o estoque.
+			\end{itemize}
+		\item Solução Atual: Forma empírica com uso de papéis ou apenas memorização.
+		\item Solução Proposta:
+			\begin{itemize}
+				\item Cadastrar os produtos em uma plataforma para controlar a quantidade de entrada dos produtos e a atual disponibilidade.
+			\end{itemize}
+	\end{itemize}
+
+\item Controle de desperdício de matéria-prima
+
+	\begin{itemize}
+		\item Prioridade: Alta
+		\item Problemas:
+			\begin{itemize}
+			\item Compra de material em excesso, pode gerar desperdício.
+			\end{itemize}
+		\item Solução Atual: Compra-se uma quantidade fixa de matéria-prima:
+		\item Solução Proposta:
+			\begin{itemize}
+				\item Analisar mensalmente, os produtos que sobram e que poderiam ser comprado em menor quantidade.
+			\end{itemize}
+	\end{itemize}
+
+\end{itemize}
+
 \section{Visão geral do produto}
+
+\subsection{Interfaces do Produto}
+	A proposta da aplicação Pydaria é uma aplicação Desktop, com uso de uma GUI(Graphical User Interface) produzida em Python com a tecnologia Pyqt4, fornecendo uma interface fácil para utilização dos funcionários da Padaria da Vila, a fim de fornecer detalhes sobre o estoque.
+
+\subsection{Resumo das Capacidades}
+	\begin{itemize}
+	\item Benefícios para o usuário: Controle confiável de estoque
+		\begin{itemize}
+			\item Recursos do sistema: O sistema manterá o registro dos produtos no estoque e suas quantidades.
+		\end{itemize}
+
+	\item Benefícios para o usuário: Redução de desperdício
+		\begin{itemize}
+			\item Recursos do sistema: O sistema notificará o usuário sobre matéria-prima comprada em excesso.
+		\end{itemize}
+
+	\end{itemize}
+
 
 \section{Características do produto}
 
-\subsection{Interfaces do Produto}
+\subsection{Manter Produtos}
+	O software permitirá operações de CRUD envolvendo produtos pertencentes ao estoque do comércio, armazenando em um banco de dados.
 
-\subsection{Resumo das Capacidades}
+\subsection{Analisar entrada/saída de produtos terceirizados}
+	O software permitirá os seus usuários verificarem a quantidade de cada produto presente no estoque e também permitirá verificar qual os produtos terceirizados mais vendidos e menos vendidos através de um relatório.
+
+\subsection{Analisar taxa/saída de matéria-prima}
+	O software fornecerá uma análise para verificar se a taxa de saída é compatível com a taxa de entrada, a fim de verificar se houve desperdício no mês.
+
+\subsection{Fornecer Relatório}
+	O software poderá fornecer um relatório mensalmente ao usuário, informando de algumas possíveis atitudes para evitar o desperdício de recursos.
 
 \section{Restrições}
+	O projeto possui as seguintes restrições:
+	\begin{enumerate}
+	\item A aplicação será executada em desktop, necessitando de uma máquina com sistema operacional Linux ou Windows.
+
+	\item Apenas uma amostra da aplicação será contruído, devido ao tempo disponível para produção.
+	\end{enumerate}
+
 
 \section{Escopo da qualidade}
+A análise do escopo da qualidade será efetuada através da verificação da experiência de usuário no uso do produto, ocasionando em manutenções para melhorar a usabilidade caso o cliente solicite.
+O produto tem que cumprir o que o usuário solicitou no seu planejamento, caso falte algo o mesmo deve voltar para a produção.
+
+
 \end{appendices}
