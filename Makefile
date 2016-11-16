@@ -16,7 +16,8 @@ FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
 EDITAVEIS_DIR = editaveis
 EDITAVEIS_SOURCES = informacoes.tex introducao.tex historico.tex \
 		empresa.tex gerencia_requisitos.tex processo.tex tecnicas_elicitacao.tex \
-		requisitos_coletados.tex conclusao.tex anexo.tex visao.tex relatos.tex
+		requisitos_coletados.tex conclusao.tex anexo.tex visao.tex relatos.tex \
+		analise_do_problema.tex
 
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
 
